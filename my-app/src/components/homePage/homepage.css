@@ -1,0 +1,94 @@
+div{
+    display: block;
+}
+.HomePage{
+    font-family:"SF Pro Text", BlinkMacSystemFont, -apple-system, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    background-color: rgb(10, 10, 39);
+    height: 833px;
+}
+
+.leads{
+    box-sizing: border-box;
+    margin: 0px 0px 12px;
+    /* font-family: "SF Pro Text", BlinkMacSystemFont, -apple-system, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", Helvetica, Arial, sans-serif; */
+    font-size: 59px;
+    font-weight: 600;
+    line-height: 1.3em;
+    color: rgb(255, 255, 255);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.p{
+    font-size: 20px;
+    font-weight: 800;
+    color: rgb(255, 255, 255);
+
+}
+.bg{
+    background-size: cover;
+    width: 80%;
+    height: 200%;
+    
+}
+
+.my-5 mx-5 mx-5{
+    box-sizing: border-box;
+    margin: 0px;
+    margin-left:  ;
+    /* background-image: url(https://d2vi0z68k5oxnr.cloudfront.net/90d5d97f-9165-480c-9839-537102212140/original.jpeg?d=md-cover); */
+    background-position: center ;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 16px;
+    transition: background-image 0.5s linear 0s;
+    position: relative;
+    inset: 0px;
+}
+.justify-content-md-center{
+    box-sizing: border-box;
+    margin: 0px;
+    flex-direction: column;
+    -webkit-box-pack: center;
+    justify-content: center;
+    inset: 0px;
+    position: absolute;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+}
+.d-block{
+    /* margin-top: 150px; */
+    box-sizing: border-box;
+    -webkit-box-pack: center;
+    justify-content: center;
+    width: 100%;
+    /* overflow: hidden; */
+    height: 100%;
+}
+#divv{
+    
+    overflow: hidden;
+    position: flex;
+}
+.div1{
+    margin-top: 100px;
+    box-sizing: border-box;
+    overflow: hidden;
+    height: 32rem;
+    width: 250px;        
+    /* box-shadow: rgba(243, 241, 241, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px; */
+
+}
+.image{
+    background-position: center;
+    background-size: cover;
+    overflow: hidden;
+    display: flex;
+
+}
+.carosel{
+    transition: background-image 0.5s linear 0s;
+}
+.Div2{
+     
+}

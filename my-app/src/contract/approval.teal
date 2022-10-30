@@ -1,0 +1,152 @@
+#pragma version 6
+txn ApplicationID
+int 0
+==
+bnz main_l18
+txn OnCompletion
+int NoOp
+==
+bnz main_l3
+err
+main_l3:
+txna ApplicationArgs 0
+byte "SellAlgoBuyNFT"
+==
+bnz main_l17
+txna ApplicationArgs 0
+byte "getAlgoFromContract"
+==
+bnz main_l16
+txna ApplicationArgs 0
+byte "sellNFT"
+==
+bnz main_l15
+txna ApplicationArgs 0
+byte "buyNFT"
+==
+bnz main_l14
+txna ApplicationArgs 0
+byte "withdraw"
+==
+bnz main_l13
+txna ApplicationArgs 0
+byte "GRP"
+==
+bnz main_l12
+txna ApplicationArgs 0
+byte "GRP1"
+==
+bnz main_l11
+err
+main_l11:
+itxn_begin
+int axfer
+itxn_field TypeEnum
+txn Sender
+itxn_field AssetReceiver
+int 1
+itxn_field AssetAmount
+txna Assets 0
+itxn_field XferAsset
+itxn_submit
+int 1
+return
+int 1
+return
+main_l12:
+itxn_begin
+int pay
+itxn_field TypeEnum
+txn Sender
+itxn_field Sender
+txna Accounts 1
+itxn_field Receiver
+int 1000000
+itxn_field Amount
+txn Sender
+itxn_field RekeyTo
+itxn_submit
+int 1
+return
+int 1
+return
+main_l13:
+itxn_begin
+int axfer
+itxn_field TypeEnum
+txn Sender
+itxn_field AssetReceiver
+int 1
+itxn_field AssetAmount
+txna Assets 0
+itxn_field XferAsset
+itxn_submit
+int 1
+return
+int 1
+return
+main_l14:
+itxn_begin
+int pay
+itxn_field TypeEnum
+txn Sender
+itxn_field Sender
+txna Accounts 1
+itxn_field Receiver
+int 1000000
+itxn_field Amount
+txn Sender
+itxn_field RekeyTo
+itxn_submit
+int 1
+return
+int 1
+return
+main_l15:
+itxn_begin
+int axfer
+itxn_field TypeEnum
+global CurrentApplicationAddress
+itxn_field AssetReceiver
+int 0
+itxn_field AssetAmount
+txna Assets 0
+itxn_field XferAsset
+itxn_submit
+int 1
+return
+int 1
+return
+main_l16:
+itxn_begin
+int pay
+itxn_field TypeEnum
+byte "creatorAddrr"
+app_global_get
+itxn_field Receiver
+int 1000000
+itxn_field Amount
+itxn_submit
+int 1
+return
+main_l17:
+itxn_begin
+int pay
+itxn_field TypeEnum
+txn Sender
+itxn_field Sender
+global CurrentApplicationAddress
+itxn_field Receiver
+int 1000000
+itxn_field Amount
+txn Sender
+itxn_field RekeyTo
+itxn_submit
+int 1
+return
+main_l18:
+byte "creatorAddrr"
+txn Sender
+app_global_put
+int 1
+return

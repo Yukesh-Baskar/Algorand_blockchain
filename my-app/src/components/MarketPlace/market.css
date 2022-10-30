@@ -1,0 +1,25 @@
+.container{
+}
+
+/* .btn{
+    margin-left: -100px;
+} */
+
+.ty{
+    height: 3017px;
+}
+.spline{
+    /* box-shadow: 10px 40px 40px 20px rgb(17, 153, 250); */
+}
+
+#sellerAssetId{
+    background: none;
+}
+
+#sellerAskingAmount{
+    background: none;
+}
+
+#sellerTokenName{
+    background: none;
+}

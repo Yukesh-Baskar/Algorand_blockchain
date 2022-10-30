@@ -1,0 +1,18 @@
+#con{
+    overflow: hidden;
+    align-items: center;
+    justify-content: center;
+    display: absolute;
+    width: 100%;
+    height: 100%;
+    margin-left: 200px;
+}
+
+#inputDiv{
+    padding: 10px 10px 10px 10px;
+    padding-left: 550px;
+}
+
+#bttttn{
+    margin-right: 400px;
+}
