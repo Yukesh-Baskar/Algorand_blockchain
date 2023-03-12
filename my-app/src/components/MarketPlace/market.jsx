@@ -44,7 +44,7 @@ const MarketPlace = () => {
 
     const testServer = "https://testnet-algorand.api.purestake.io/ps2";
     const token = {
-        'x-API-key': "tzV5ZpDgtqaBUzskSO6Ly8TyYVlguUyt75iqYpsa"
+        'x-API-key': process.env.API_SECRET
     }
     const port = 443
 
